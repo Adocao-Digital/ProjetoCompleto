@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;              
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f0f6;     
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #91c041;   
+    border-radius: 20px;       
+    border: 3px solid #f1f0f6; 
+}
+
+.subtitulo {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+.caixa1 {
+    font-size: 2rem;
+    color:#808080;
+    margin-bottom: 6rem;
+}
+
+.infotexto {
+    background-color: #FFFBD8;
+}
+
+.infot {
+    font-size: 20px;
+    display: flex;
+    margin-left: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+.infot h1 {
+    color:#91C041;
+    font-weight: lighter;
+}
+
+/* Media Queries */
+
+/* Tela pequena (dispositivos móveis) */
+@media screen and (max-width: 767px) {
+
+    .caixa1 {
+        margin-top: 40px;
+        width: 90%;
+        margin-left: 5%;
+        height: 380px;
+        margin-left: 40px;
+    }
+
+    .caixa1 h5 {
+        font-size: 1.5rem;
+    }
+
+    .caixa1 p {
+        font-size: 0.8rem;
+    }
+
+    .infot h1{
+        right: 150px;
+        display: flex;
+        position: relative;
+
+    }
+}
+
+/* Tela média (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .caixa1 {
+        margin-top: 40px;
+        width: 70%;
+        margin-left: 180px;
+        height: 500px;
+        width: 70%;
+    }
+
+    .caixa1 h5 {
+        font-size: 2rem;
+    }
+
+    .infot {
+        margin-left: 200px;
+    }
+
+    .caixa1 p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tela grande (desktops) */
+@media screen and (min-width: 1025px) {
+    .caixa1 {
+        width: 50%;
+        margin-left: 180px;
+    }
+
+    .caixa1 h5 {
+        font-size: 2rem;
+    }
+
+    .caixa1 p {
+        font-size: 1.2rem;
+    }
+}
